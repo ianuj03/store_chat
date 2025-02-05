@@ -1,2 +1,17 @@
 *~
+**/depend
+**/static/**
+**/localsettings.py
+dbdata/
+**/*.pyc
+**/media/**
+
+**/socialone_connector/**
+**/socialone_plugins/**
+
+**/db.sqlite3
+.DS_Store
+state
+
+**/**.sqlite3
 .env

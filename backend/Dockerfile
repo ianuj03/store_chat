@@ -1,19 +1,24 @@
 # Use official Python image
 FROM python:3.11
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy and install dependencies
+# Copy dependencies file
 COPY requirements.txt .
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the entire backend code
+# Copy all project files
 COPY . .
 
 # Expose port 8000
 EXPOSE 8000
 
-# Run Django server
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "storechat.wsgi:application"]
+# Grant execution permissions to the init script
+RUN chmod +x /app/init.sh
+
+# Run the initialization script
+CMD ["/app/init.sh"]
 
