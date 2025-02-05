@@ -1,0 +1,8 @@
+Django>=4.2
+djangorestframework
+gunicorn
+redis
+channels
+channels-redis
+celery
+python-dotenv
