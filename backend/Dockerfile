@@ -15,6 +15,7 @@ COPY . .
 
 RUN chmod 777 /app
 
+
 # Expose port 8000
 EXPOSE 8000
 
