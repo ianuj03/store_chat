@@ -90,7 +90,7 @@ def format_function_response(function_name: str, content: dict):
     return {
         "role": "function",
         "name": function_name,
-        "content": json.dumps(content)
+        "content": json.dumps(content, default=str)
     }
 
 async def process_conversation(user_query, session_id, user=None):
