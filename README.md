@@ -42,8 +42,8 @@ This will start:
 
 ### 5. **Accessing the Admin Panel**
 Visit `http://localhost:8000/admin` to access the Django admin panel.
-`username: admin`
-`password: admin123`
+- `username: admin` 
+- `password: admin123`
 
 ## Docker Overview
 
