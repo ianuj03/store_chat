@@ -6,7 +6,7 @@ StoreChat is a full-stack web application with a Django backend and a Next.js fr
 
 ### 1. **Clone the Repository**
 ```bash
-git clone <repository_url>
+git clone https://github.com/ianuj03/store_chat.git
 cd storechat
 ```
 
@@ -40,7 +40,10 @@ This will start:
 - The Next.js frontend at `http://localhost:3000`
 - Redis at `localhost:6379`
 
-### 5. **Accessing the Admin Panel**
+### 5. **Seeding Initial Data**
+Upon the first run, the application will automatically add a few records to help you get started. This includes sample users, messages, and settings for quick testing and development.
+
+### 6. **Accessing the Admin Panel**
 Visit `http://localhost:8000/admin` to access the Django admin panel.
 - `username: admin` 
 - `password: admin123`
@@ -51,7 +54,7 @@ Visit `http://localhost:8000/admin` to access the Django admin panel.
 - **Frontend Container:** Next.js application for the UI.
 - **Redis Container:** In-memory data store for caching and real-time features.
 
-## 🗒️ Notes
+## Notes
 - Ensure Docker and Docker Compose are installed on your machine.
 - The first run might take some time as Docker builds the images.
 - Static files are automatically collected using `init.sh`.
