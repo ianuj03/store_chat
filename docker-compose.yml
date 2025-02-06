@@ -8,6 +8,7 @@ services:
     env_file: .env
     volumes:
       - ./backend:/app
+      - /app/db.sqlite3
     ports:
       - "8000:8000"
     depends_on:
