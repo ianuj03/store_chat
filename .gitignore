@@ -14,5 +14,8 @@ dbdata/
 .DS_Store
 state
 
+**/.next
+**/node_modules/
+
 **/**.sqlite3
 .env

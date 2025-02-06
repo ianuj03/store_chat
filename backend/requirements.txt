@@ -54,6 +54,7 @@ sqlparse==0.4.2
 textblob==0.18.0
 tqdm==4.64.1
 urllib3==1.26.12
+uvicorn[standard]
 vaderSentiment==3.3.2
 wrapt==1.14.1
 yarl==1.8.2
