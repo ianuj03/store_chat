@@ -13,6 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy all project files
 COPY . .
 
+RUN chmod 777 /app
+
 # Expose port 8000
 EXPOSE 8000
 
